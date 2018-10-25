@@ -1,0 +1,1 @@
+INSERT INTO `sys_user` VALUES ('c79ba431f9f74dfbae585b87b0cde933', 'admin', '038bdaf98f2037b31f1e75b5b4c9b26e', 1, '2017-9-14 15:02:17', '', 'http://news.mydrivers.com/Img/20110518/04481549.png', '9a329b597d754c4180c6b40cdfb0f565');

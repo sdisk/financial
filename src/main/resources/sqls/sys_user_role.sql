@@ -1,0 +1,1 @@
+INSERT INTO `sys_user_role` VALUES ('7d32e28ee3d1452d952f29764e989bab', 'c79ba431f9f74dfbae585b87b0cde933', 'b1f9ce5543a049be9f169a3f5e6b72a8');
