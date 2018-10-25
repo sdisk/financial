@@ -9,8 +9,6 @@ import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 import org.apache.shiro.util.ByteSource;
 
-import java.util.List;
-
 
 /**
  * @program: financial
@@ -230,10 +228,10 @@ public class ShiroKit {
     /**
      * 获取当前用户的部门数据范围的集合
      */
-    public static List<Integer> getDeptDataScope(){
+    /*public static List<Integer> getDeptDataScope(){
         Integer deptId = getUser().getDeptId();
         List<Integer> subDeptIds = Consta
-    }
+    }*/
     public static void main(String[] args) {
         String userid= "huang";
         ByteSource salt =  ByteSource.Util.bytes(userid);

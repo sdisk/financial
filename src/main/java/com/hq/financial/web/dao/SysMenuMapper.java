@@ -3,6 +3,8 @@ package com.hq.financial.web.dao;
 import com.hq.financial.web.entity.SysMenu;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 
+import java.util.List;
+
 /**
  * <p>
  * 菜单表 Mapper 接口
@@ -13,4 +15,5 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  */
 public interface SysMenuMapper extends BaseMapper<SysMenu> {
 
+    List<String> selectResourceByUid(String id);
 }

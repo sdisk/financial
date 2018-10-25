@@ -29,7 +29,11 @@ public enum HuiExceptionEnum  implements ServiceExceptionEnum{
      * 错误的请求
      */
     REQUEST_NULL(400, "请求有错误"),
-    SERVER_ERROR(500, "服务器异常");
+    SERVER_ERROR(500, "服务器异常"),
+    /**
+     * 验证码错误
+     */
+    KAPTCHA_ERROR(400, "验证码错误");
 
     private Integer code;
     private String message;

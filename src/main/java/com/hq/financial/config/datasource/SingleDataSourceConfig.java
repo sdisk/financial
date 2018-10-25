@@ -19,7 +19,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @ConditionalOnProperty(prefix = "hq.muti-datasource",name="open",havingValue = "false",matchIfMissing = true)
 @EnableTransactionManagement
-@MapperScan(basePackages = {"com.hq,web.entity.dao"})
+@MapperScan(basePackages = {"com.hq.financial.web.dao"})
 public class SingleDataSourceConfig {
 
     /**

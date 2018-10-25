@@ -1,0 +1,21 @@
+<#macro header>
+<!DOCTYPE html>
+<macro>
+<head>
+   <#include "/common/head.html">
+    <link rel="stylesheet" href="/plugins/layui/css/layui.css">
+    <#nested>
+</head>
+</macro>
+<!-- /header -->
+<#macro body>
+    <#nested>
+</#macro>
+<!-- /body -->
+<#macro footer>
+    <#include "/common/js.html">
+    <#nested>
+</#macro>
+</body>
+</html>
+</#macro>
