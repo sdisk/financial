@@ -8,7 +8,7 @@ hq:
   password: 123456
 
 server:
-  port: 8080
+  port: 80
 
 spring:
   mvc:
@@ -27,6 +27,15 @@ spring:
     charset: utf-8 #\u7F16\u7801\u683C\u5F0F
     settings:
       number_format: '0.##' #\u6570\u5B57\u683C\u5F0F\u5316\uFF0C\u65E0\u5C0F\u6570\u70B9
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    timeout: 3000
+  session:
+    store-type: mongodb
+
 
 mybatis-plus:
   type-aliases-package: com.hq.financial.web.entity
@@ -46,8 +55,7 @@ mybatis-plus:
 logging:
   level:
     org.springframework.web: debug #\u65E5\u5FD7\u7EA7\u522B
-  file: financial.log #\u65E5\u5FD7\u6587\u4EF6
-  path: /opt/logs    #\u65E5\u5FD7\u8DEF\u5F84
+  file:  /opt/logs/financial.log #\u65E5\u5FD7\u6587\u4EF6
 
 
 

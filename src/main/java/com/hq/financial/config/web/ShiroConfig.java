@@ -31,7 +31,7 @@ import java.util.Map;
  * @author: Mr.Huang
  * @create: 2018-10-22 14:51
  **/
-@Configuration
+//@Configuration
 public class ShiroConfig {
 
     /**
@@ -59,6 +59,7 @@ public class ShiroConfig {
         sessionManager.setGlobalSessionTimeout(properties.getSessionInvalidateTime()* 1000);
         sessionManager.setDeleteInvalidSessions(true);
         sessionManager.setSessionValidationSchedulerEnabled(true);
+        sessionManager.setSessionIdUrlRewritingEnabled(true);
         Cookie cookie = new SimpleCookie(ShiroHttpSession.DEFAULT_SESSION_ID_NAME);
         cookie.setName("shiroCookie");
         cookie.setHttpOnly(true);  //JavaScript脚本将无法读取到Cookie信息,反正xss攻击

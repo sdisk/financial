@@ -12,7 +12,8 @@ import java.sql.SQLException;
  **/
 public class DruidProperties {
 
-    private String url = "jdbc:mysql://127.0.0.1:3306/finan?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL";
+    private String url = "jdbc:mysql://localhost:3306/finan?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=UTC&useSSL=false";
+    //private String url = "jdbc:mysql://127.0.0.1:3306/finan?autoReconnect=true&useUnicode=true&characterEncoding=utf8";
 
     private String username = "root";
 
